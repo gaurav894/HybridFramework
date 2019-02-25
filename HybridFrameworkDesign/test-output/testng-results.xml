@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15022" started-at="2019-02-22T10:33:38Z" finished-at="2019-02-22T10:33:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15022" started-at="2019-02-22T10:33:38Z" finished-at="2019-02-22T10:33:53Z">
+      <class name="com.demo.testCases.LoginApp">
+        <test-method status="PASS" signature="logntoApp()[pri:0, instance:com.demo.testCases.LoginApp@62ee68d8]" name="logntoApp" duration-ms="14998" started-at="2019-02-22T16:03:38Z" finished-at="2019-02-22T16:03:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logntoApp -->
+      </class> <!-- com.demo.testCases.LoginApp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
