@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15022" started-at="2019-02-22T10:33:38Z" finished-at="2019-02-22T10:33:53Z">
+  <suite name="Suite" duration-ms="17020" started-at="2019-02-25T05:47:43Z" finished-at="2019-02-25T05:48:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15022" started-at="2019-02-22T10:33:38Z" finished-at="2019-02-22T10:33:53Z">
+    <test name="Test" duration-ms="17020" started-at="2019-02-25T05:47:43Z" finished-at="2019-02-25T05:48:00Z">
       <class name="com.demo.testCases.LoginApp">
-        <test-method status="PASS" signature="logntoApp()[pri:0, instance:com.demo.testCases.LoginApp@62ee68d8]" name="logntoApp" duration-ms="14998" started-at="2019-02-22T16:03:38Z" finished-at="2019-02-22T16:03:53Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.demo.testCases.LoginApp@20e2cbe0]" name="setup" is-config="true" duration-ms="7064" started-at="2019-02-25T11:17:43Z" finished-at="2019-02-25T11:17:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="logntoApp()[pri:0, instance:com.demo.testCases.LoginApp@20e2cbe0]" name="logntoApp" duration-ms="9162" started-at="2019-02-25T11:17:50Z" finished-at="2019-02-25T11:17:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logntoApp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.testCases.LoginApp@20e2cbe0]" name="tearDown" is-config="true" duration-ms="775" started-at="2019-02-25T11:17:59Z" finished-at="2019-02-25T11:18:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.demo.testCases.LoginApp -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

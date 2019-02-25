@@ -16,10 +16,11 @@ public class Loginpage {
 	@FindBy(name = "password") WebElement pass;
 	@FindBy(xpath = ".//div[@class='ui fluid large blue submit button']") WebElement submit;
 	
-	public void logintoapplication(String username, String password) {
+	public void logintoapplication(String username, String password) throws InterruptedException {
 		Login.click();
 		user.sendKeys(username);
 		pass.sendKeys(password);
 		submit.click();
+		Thread.sleep(4000);
 	}
 }

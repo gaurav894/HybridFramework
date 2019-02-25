@@ -1,32 +1,19 @@
 package com.demo.testCases;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.demo.utility.BrowserFactory;
-
+import HybridFrameworkDesign.webpages.Baseclass;
 import HybridFrameworkDesign.webpages.Loginpage;
 
-public class LoginApp {
-	WebDriver ldriver;
-	@BeforeClass
-	public void setup() {
-		ldriver = BrowserFactory.openApplication(ldriver, "Chrome", "https://freecrm.com/index.html");
-	}
+public class LoginApp extends Baseclass{
 	
-	@AfterClass
-	public void tearDown() {
-		BrowserFactory.quitBrowser(ldriver);
-	}
 	
 	@Test
-	public void logntoApp() {
+	public void logntoApp() throws InterruptedException {
 		
 		Loginpage login = PageFactory.initElements(ldriver, Loginpage.class);
-		login.logintoapplication("uiautomation1991@gmail.com", "gaurav@123");
+		login.logintoapplication(excel.getStringData("Login", 1, 0),excel.getStringData("Login", 1, 1));
 		System.out.println(ldriver.getTitle());
 		
 	}

@@ -29,8 +29,7 @@ public class BrowserFactory {
 		ldriver.manage().window().maximize();
 		ldriver.get(appUrl);
 		ldriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		return ldriver;
-		
+		return ldriver;	
 	}
 	
 	public static void quitBrowser(WebDriver ldriver) {
